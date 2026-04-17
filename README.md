@@ -1,16 +1,25 @@
-## Hi there 👋
+# Flanger Kids – Official Website
 
-<!--
-**FlangerKids/flangerkids** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+The official website of **Flanger Kids**, the Budapest-based electronic bedroom duo of Gyarmati Fanny and Szczuka Panka.
 
-Here are some ideas to get you started:
+🌐 **Live site:** [flangerkids.github.io/flangerkids](https://FlangerKids.github.io/flangerkids/)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## What's on the site
+
+- **Home** – band intro, Backpack Session info
+- **Shows** – upcoming concert dates
+- **Merch** – t-shirts and tote bags
+- **Contact** – booking email and social links
+
+## Socials
+
+- [Instagram](https://www.instagram.com/flangerkids/)
+- [Facebook](https://www.facebook.com/flangerkids)
+- [YouTube](https://www.youtube.com/@FlangerKids)
+- [Spotify](https://open.spotify.com/artist/0Z6OJHkHFz4JiwDHaCzhE9)
+
+## Booking
+
+📩 flangerkids@gmail.com

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══════════════════════════════════════════════
+     SEO – ALAPVETŐ META TAGEK
+════════════════════════════════════════════════ -->
+<title>Flanger Kids</title>
+<meta name="description" content="Flanger Kids – Gyarmati Fanny és Szczuka Panka budapesti elektronikus bedroom duója. Bólogatós beatek, éteri vokálok, álomszerű gitártextúrák 2020 óta. Koncertek, merch, booking.">
+<meta name="keywords" content="Flanger Kids, Gyarmati Fanny, Szczuka Panka, elektronikus zene, bedroom pop, indie elektronikus, Budapest, magyar zenekar, koncert, Flanger Kids zenekar">
+<meta name="author" content="Flanger Kids">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://FlangerKids.github.io/flangerkids/">
+
+<!-- ═══════════════════════════════════════════════
+     OPEN GRAPH (Facebook, Messenger, WhatsApp stb.)
+════════════════════════════════════════════════ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://FlangerKids.github.io/flangerkids/">
+<meta property="og:title" content="Flanger Kids – Elektronikus bedroom duó | Budapest">
+<meta property="og:description" content="Gyarmati Fanny és Szczuka Panka elektronikus duója 2020 óta. Bólogatós beatek, éteri vokálok, álomszerű gitártextúrák. Koncertek, merch, booking.">
+<meta property="og:image" content="https://FlangerKids.github.io/flangerkids/img/flanger_kids.jpg">
+<meta property="og:image:alt" content="Flanger Kids – Gyarmati Fanny és Szczuka Panka">
+<meta property="og:locale" content="hu_HU">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:site_name" content="Flanger Kids">
+
+<!-- ═══════════════════════════════════════════════
+     TWITTER / X CARD
+════════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flanger Kids – Elektronikus bedroom duó | Budapest">
+<meta name="twitter:description" content="Gyarmati Fanny és Szczuka Panka elektronikus duója 2020 óta. Bólogatós beatek, éteri vokálok, álomszerű gitártextúrák.">
+<meta name="twitter:image" content="https://FlangerKids.github.io/flangerkids/img/flanger_kids.jpg">
+
+<!-- ═══════════════════════════════════════════════
+     JSON-LD STRUKTURÁLT ADAT (Google Rich Results)
+════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicGroup",
+      "@id": "https://FlangerKids.github.io/flangerkids/#band",
+      "name": "Flanger Kids",
+      "alternateName": ["Flanger Kids zenekar", "Flanger Kids Budapest"],
+      "description": "Gyarmati Fanny és Szczuka Panka budapesti elektronikus bedroom duója 2020 óta. Bólogatós beatek, éteri vokálok, álomszerű gitártextúrák, introspektív szövegek.",
+      "foundingDate": "2020",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Budapest, Magyarország"
+      },
+      "genre": ["Electronic", "Bedroom Pop", "Indie Electronic"],
+      "member": [
+        {
+          "@type": "Person",
+          "name": "Gyarmati Fanny"
+        },
+        {
+          "@type": "Person",
+          "name": "Szczuka Panka"
+        }
+      ],
+      "url": "https://FlangerKids.github.io/flangerkids/",
+      "image": "https://FlangerKids.github.io/flangerkids/img/flanger_kids.jpg",
+      "email": "flangerkids@gmail.com",
+      "sameAs": [
+        "https://www.instagram.com/flangerkids/",
+        "https://www.facebook.com/flangerkids",
+        "https://www.youtube.com/@FlangerKids",
+        "https://open.spotify.com/artist/0Z6OJHkHFz4JiwDHaCzhE9"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://FlangerKids.github.io/flangerkids/#website",
+      "url": "https://FlangerKids.github.io/flangerkids/",
+      "name": "Flanger Kids",
+      "description": "Flanger Kids – Gyarmati Fanny és Szczuka Panka elektronikus bedroom duójának hivatalos weboldala.",
+      "inLanguage": ["hu", "en"],
+      "publisher": {
+        "@id": "https://flangerkids.hu/#band"
+      }
+    }
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --yellow: #FFC567;
+    --pink: #FB7DA8;
+    --red: #FD5A46;
+    --purple: #552CB7;
+    --green: #00995E;
+    --blue: #058CD7;
+    --black: #111;
+    --white: #fff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--yellow);
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(253,90,70,0.10) 0px, rgba(253,90,70,0.10) 20px,
+      transparent 20px, transparent 40px
+    );
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--black);
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ccircle cx='10' cy='10' r='8' fill='%23552CB7' stroke='%23111' stroke-width='2'/%3E%3C/svg%3E") 10 10, auto;
+    overflow-x: hidden;
+  }
+
+  .site-main { flex: 1; }
+
+  /* NAV */
+  nav {
+    background: var(--pink);
+    border-bottom: 4px solid var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .nav-logo {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: var(--black);
+    text-shadow: 2px 2px 0 var(--purple);
+    padding: 14px 0;
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--purple); }
+  .nav-right { display: flex; align-items: center; }
+  .nav-links { display: flex; }
+  .nav-links a {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: var(--black);
+    text-decoration: none;
+    padding: 18px 16px;
+    display: block;
+    text-transform: uppercase;
+    transition: background 0.1s, color 0.1s;
+    border-left: 2px solid rgba(0,0,0,0.12);
+  }
+  .nav-links a:hover { background: var(--purple); color: var(--white); }
+
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    margin-right: 6px;
+    background: var(--black);
+    border-radius: 999px;
+    padding: 3px;
+    gap: 2px;
+  }
+  .lang-btn {
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    padding: 7px 12px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: rgba(255,255,255,0.45);
+    border-radius: 999px;
+    transition: background 0.15s, color 0.15s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .lang-btn:hover { color: var(--white); }
+  .lang-btn.active { background: var(--yellow); color: var(--black); }
+
+  section { display: none; }
+  section.active { display: block; }
+
+  .page-wrap {
+    max-width: 1100px;
+    margin: 48px auto;
+    padding: 0 32px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .card {
+    background: var(--white);
+    border: 3px solid var(--black);
+    box-shadow: 7px 7px 0 var(--black);
+    overflow: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--white);
+    border: 3px solid var(--black);
+    box-shadow: 7px 7px 0 var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 440px;
+    overflow: hidden;
+  }
+  .hero-left {
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 3px solid var(--black);
+    background: var(--yellow);
+  }
+  .hero-eyebrow {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    color: var(--purple);
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+  }
+  .hero-title {
+    font-family: 'VT323', monospace;
+    font-size: 80px;
+    color: var(--black);
+    line-height: 1.05;
+    text-shadow: 4px 4px 0 var(--purple);
+    margin-bottom: 20px;
+  }
+  .hero-title span { color: var(--red); text-shadow: 3px 3px 0 var(--black); }
+  .hero-sub {
+    font-size: 15px;
+    color: var(--black);
+    line-height: 1.75;
+    max-width: 390px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+  .socials { display: flex; gap: 10px; flex-wrap: wrap; }
+  .social-btn {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    padding: 6px 14px;
+    border: 3px solid var(--black);
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.1s;
+    cursor: pointer;
+  }
+  .social-btn:hover { transform: translate(-2px,-2px); }
+  .social-btn.ig { background: var(--pink); color: var(--black); box-shadow: 3px 3px 0 var(--black); }
+  .social-btn.fb { background: var(--blue); color: var(--white); box-shadow: 3px 3px 0 var(--black); }
+  .social-btn.yt { background: var(--red);  color: var(--white); box-shadow: 3px 3px 0 var(--black); }
+  .social-btn.sp { background: var(--green);color: var(--white); box-shadow: 3px 3px 0 var(--black); }
+
+  .hero-right {
+    background: var(--pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    gap: 16px;
+  }
+  .hero-photo {
+    width: 270px; height: 270px;
+    object-fit: cover;
+    border: 4px solid var(--black);
+    box-shadow: 8px 8px 0 var(--black);
+    display: block;
+  }
+  .img-caption {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: var(--black);
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  /* BACKPACK */
+  .backpack-card {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    overflow: hidden;
+  }
+  .backpack-img-wrap {
+    border-right: 3px solid var(--black);
+    min-height: 280px;
+    overflow: hidden;
+  }
+  .backpack-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .backpack-body {
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    background: var(--white);
+  }
+  .card-num {
+    font-family: 'VT323', monospace;
+    font-size: 52px;
+    color: var(--yellow);
+    -webkit-text-stroke: 2px var(--black);
+  }
+  .card-label {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+  .backpack-body p { font-size: 15px; color: #333; line-height: 1.8; }
+
+  /* SECTION HEADER */
+  .section-header {
+    padding: 26px 36px;
+    background: var(--purple);
+    border-bottom: 3px solid var(--black);
+  }
+  .section-title {
+    font-family: 'VT323', monospace;
+    font-size: 48px;
+    color: var(--yellow);
+    text-shadow: 3px 3px 0 var(--black);
+    margin-bottom: 6px;
+  }
+  .section-sub {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* CONCERTS */
+  .concert-list { display: flex; flex-direction: column; }
+  .concert-item {
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    align-items: center;
+    padding: 24px 32px;
+    border-bottom: 2px solid #eee;
+    gap: 28px;
+    transition: background 0.1s;
+    position: relative;
+    background: var(--white);
+  }
+  .concert-item:last-child { border-bottom: none; }
+  .concert-item:hover { background: #fffbf0; }
+  .concert-item::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: var(--pink);
+  }
+  .concert-date { font-family: 'VT323', monospace; font-size: 24px; color: var(--purple); line-height: 1.4; }
+  .concert-info h3 { font-family: 'VT323', monospace; font-size: 24px; color: var(--black); margin-bottom: 6px; line-height: 1.4; }
+  .concert-info p { font-size: 13px; color: #555; }
+  .concert-badge {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    padding: 4px 12px;
+    border: 2px solid;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .concert-badge a { text-decoration: none; color: inherit; }
+  .badge-soon { border-color: var(--green); color: var(--green); }
+  .badge-sold { border-color: var(--red); color: var(--red); }
+  .badge-free { border-color: var(--purple); color: var(--purple); }
+
+  /* MERCH */
+  .merch-product-section { padding: 40px 36px; border-bottom: 3px solid var(--black); }
+  .merch-product-section:last-of-type { border-bottom: none; }
+  .merch-product-title {
+    font-family: 'VT323', monospace;
+    font-size: 38px;
+    color: var(--black);
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  .merch-product-desc { font-size: 14px; color: #555; margin-bottom: 22px; line-height: 1.7; max-width: 640px; }
+  .merch-product-price { font-family: 'VT323', monospace; font-size: 32px; color: var(--purple); margin-bottom: 18px; display: block; }
+  .merch-product-note { font-family: 'VT323', monospace; font-size: 18px; color: #888; line-height: 1.7; margin-top: 16px; }
+
+  /* Color picker */
+  .color-picker { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; align-items: center; }
+  .color-picker-label { font-family: 'VT323', monospace; font-size: 20px; color: #888; margin-right: 4px; }
+  .color-swatch {
+    width: 32px; height: 32px;
+    border: 3px solid var(--black);
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    position: relative;
+  }
+  .color-swatch:hover { transform: scale(1.15); }
+  .color-swatch.active { box-shadow: 0 0 0 3px var(--white), 0 0 0 6px var(--black); transform: scale(1.15); }
+
+  /* Pattern picker */
+  .pattern-picker { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; align-items: center; }
+  .pattern-btn {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    padding: 5px 16px;
+    border: 3px solid var(--black);
+    background: var(--white);
+    cursor: pointer;
+    transition: background 0.1s, color 0.1s;
+  }
+  .pattern-btn:hover { background: var(--yellow); }
+  .pattern-btn.active { background: var(--purple); color: var(--white); }
+
+  /* Product image display */
+  .merch-img-display {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    object-fit: contain;
+    border: 3px solid var(--black);
+    box-shadow: 6px 6px 0 var(--black);
+    display: block;
+    transition: opacity 0.2s;
+  }
+  .merch-layout { display: grid; grid-template-columns: 380px 1fr; gap: 40px; align-items: start; }
+  @media (max-width: 720px) { .merch-layout { grid-template-columns: 1fr; } }
+
+  /* Mood gallery */
+  .mood-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 3px solid var(--black); }
+  .mood-gallery img {
+    width: 100%; height: auto; object-fit: contain; display: block;
+    border-right: 3px solid var(--black);
+    transition: opacity 0.2s;
+  }
+  .mood-gallery img:last-child { border-right: none; }
+  .mood-gallery img:hover { opacity: 0.88; }
+
+  .merch-grid { display: grid; grid-template-columns: repeat(3,1fr); }
+  .merch-card {
+    border-right: 3px solid var(--black);
+    overflow: hidden;
+    background: var(--white);
+  }
+  .merch-card:last-child { border-right: none; }
+  .merch-img {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border-bottom: 3px solid var(--black);
+  }
+  .merch-body { padding: 20px 24px; }
+  .merch-name { font-family: 'VT323', monospace; font-size: 26px; color: var(--black); margin-bottom: 10px; line-height: 1.4; }
+  .merch-desc { font-size: 13px; color: #555; margin-bottom: 14px; line-height: 1.6; }
+  .merch-price { font-family: 'VT323', monospace; font-size: 30px; color: var(--purple); display: block; margin-bottom: 12px; }
+  .merch-note { font-family: 'VT323', monospace; font-size: 18px; color: #aaa; line-height: 1.6; }
+
+  /* CONTACT */
+  .contact-single {
+    padding: 52px 48px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 640px;
+  }
+  .contact-block-title {
+    font-family: 'VT323', monospace;
+    font-size: 28px;
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #eee;
+    line-height: 1.4;
+  }
+  .contact-row { display: flex; flex-direction: column; gap: 5px; }
+  .contact-label {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .contact-value { font-size: 16px; font-weight: 700; color: var(--black); }
+  .contact-value a {
+    color: var(--purple);
+    text-decoration: none;
+    border-bottom: 2px solid var(--pink);
+    padding-bottom: 1px;
+    transition: color 0.1s;
+  }
+  .contact-value a:hover { color: var(--red); }
+  .contact-note { font-size: 14px; color: #666; line-height: 1.75; font-style: italic; }
+  .contact-badge-strip {
+    background: var(--yellow);
+    border-top: 3px solid var(--black);
+    padding: 18px 40px;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: var(--black);
+    line-height: 2;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--purple);
+    border-top: 4px solid var(--black);
+    padding: 26px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-logo { font-family: 'VT323', monospace; font-size: 28px; color: var(--yellow); }
+  .footer-copy { font-family: 'VT323', monospace; font-size: 20px; color: rgba(255,255,255,0.5); text-align: right; line-height: 1.8; }
+
+  .blink { animation: blink 0.8s step-end infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--yellow); }
+  ::-webkit-scrollbar-thumb { background: var(--purple); border: 2px solid var(--black); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--pink); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#" onclick="showSection('home')">FLANGER <span>KIDS</span></a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="#" onclick="showSection('home')"     data-hu="Főoldal"   data-en="Home">Főoldal</a>
+      <a href="#" onclick="showSection('concerts')" data-hu="Koncertek" data-en="Shows">Koncertek</a>
+      <a href="#" onclick="showSection('merch')"    data-hu="Merch"     data-en="Merch">Merch</a>
+      <a href="#" onclick="showSection('contact')"  data-hu="Kapcsolat" data-en="Contact">Kapcsolat</a>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="hu" onclick="setLang('hu')">HUN</button>
+      <button class="lang-btn"        data-lang="en" onclick="setLang('en')">ENG</button>
+    </div>
+  </div>
+</nav>
+
+<div class="site-main">
+
+<!-- HOME -->
+<section id="home" class="active">
+  <div class="page-wrap">
+
+    <div class="hero">
+      <div class="hero-left">
+        <h1 class="hero-title">FLANGER<br><span>KIDS</span></h1>
+        <p class="hero-sub"
+           data-hu="Bólogatós beatek, éteri vokálok, álomszerű gitártextúrák, introspektív szövegek, crazy szintik, közös ugatás. Gyarmati Fanny és Szczuka Panka elektronikus bedroom duója 2020 óta szakít ki minket zenéjével a hétköznapokból."
+           data-en="Nodding beats, ethereal vocals, dreamy guitar textures, introspective lyrics, wild synths and some good old howling. Gyarmati Fanny and Szczuka Panka's electronic bedroom duo has been pulling us out of the everyday since 2020.">
+          Bólogatós beatek, éteri vokálok, álomszerű gitártextúrák, introspektív szövegek, crazy szintik, közös ugatás. Gyarmati Fanny és Szczuka Panka elektronikus bedroom duója 2020 óta szakít ki minket zenéjével a hétköznapokból.
+        </p>
+        <div class="socials">
+          <a class="social-btn ig" href="https://www.instagram.com/flangerkids/">Instagram</a>
+          <a class="social-btn fb" href="https://www.facebook.com/flangerkids">Facebook</a>
+          <a class="social-btn yt" href="https://www.youtube.com/@FlangerKids">YouTube</a>
+          <a class="social-btn sp" href="https://open.spotify.com/artist/0Z6OJHkHFz4JiwDHaCzhE9?si=kRQvp9-LS4GO8y44gCHjuw">Spotify</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="img/flanger_kids.jpg" alt="Flanger Kids – Gyarmati Fanny és Szczuka Panka" class="hero-photo">
+        <div class="img-caption">GYARMATI FANNY & SZCZUKA PANKA</div>
+      </div>
+    </div>
+
+    <div class="card backpack-card">
+      <div class="backpack-img-wrap">
+        <img src="img/backpack.jpg" alt="Backpack Session">
+      </div>
+      <div class="backpack-body">
+        <div class="card-num">BCKPCK</div>
+        <div class="card-label">🎒 BACKPACK SESSION 🎒</div>
+        <p data-hu="A Backpack Session a Flanger Kids legújabb live setje, ahol Fanny és Panka élőben remixelik már megjelent számaikat; a koncerteken megismert dalok így egy újragondolt, improvizatívabb formában szólalnak meg. A set elnevezése és kiinduló ötlete az volt, hogy legyen egy olyan duó felállásuk is, amihez két hátizsákban elférnek a szükséges cuccok."
+           data-en="Backpack Session is Flanger Kids' newest live set, where Fanny and Panka remix their already-released tracks in real time — familiar songs take on a reimagined, more improvisational shape. The name came from a simple idea: let's build a duo setup that fits into two backpacks.">
+          A Backpack Session a Flanger Kids legújabb live setje, ahol Fanny és Panka élőben remixelik már megjelent számaikat; a koncerteken megismert dalok így egy újragondolt, improvizatívabb formában szólalnak meg. A set elnevezése és kiinduló ötlete az volt, hogy legyen egy olyan duó felállásuk is, amihez két hátizsákban elférnek a szükséges cuccok.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONCERTS -->
+<section id="concerts">
+  <div class="page-wrap">
+    <div class="card">
+      <div class="section-header">
+        <div class="section-title" data-hu="KONCERTEK" data-en="SHOWS">KONCERTEK</div>
+        <div class="section-sub"><span class="blink">■</span> <span data-hu="LIVE DATES & UPCOMING SHOWS" data-en="LIVE DATES & UPCOMING SHOWS">LIVE DATES & UPCOMING SHOWS</span></div>
+      </div>
+      <div class="concert-list">
+        <div class="concert-item">
+          <div class="concert-date">2026<br>ÁPR 23</div>
+          <div class="concert-info">
+            <h3>FLANGER KIDS, PAPERDEER LIVE ACT</h3>
+            <p>📍 Gólya, Budapest &nbsp;·&nbsp; Doors: 19:30 &nbsp;·&nbsp; 3500 Ft</p>
+          </div>
+          <div class="concert-badge badge-soon"><a href="https://fb.me/e/4fCekiUHW" target="_blank" data-hu="ESEMÉNY" data-en="EVENT">ESEMÉNY</a></div>
+        </div>
+        <div class="concert-item">
+          <div class="concert-date">2026<br>MÁJ 30</div>
+          <div class="concert-info">
+            <h3>FLANGER KIDS @ PANKKUTYA FESZTIVÁL</h3>
+            <p>📍 Gébárti-tó, Zalaegerszeg &nbsp;·&nbsp; Start: 16:00</p>
+          </div>
+          <div class="concert-badge badge-free"><a href="https://www.tixa.hu/pankkutya-2026" target="_blank">TIXA</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MERCH -->
+<section id="merch">
+  <div class="page-wrap">
+    <div class="card">
+      <div class="section-header" style="background: var(--red);">
+        <div class="section-title" data-hu="MERCH SHOP" data-en="MERCH SHOP">MERCH SHOP</div>
+        <div class="section-sub" data-hu="👕 🛍️ 🐈" data-en="👕 🛍️ 🐈">👕 🛍️ 🐈</div>
+      </div>
+
+      <!-- PÓLÓ -->
+      <div class="merch-product-section">
+        <div class="merch-layout">
+          <div>
+            <img id="polo-img" class="merch-img-display" src="img/merch/polo_homokszin.jpg" alt="Flanger Kids póló">
+          </div>
+          <div>
+            <div class="merch-product-title" data-hu="PÓLÓ" data-en="T-SHIRT">PÓLÓ</div>
+            <span class="merch-product-price">4 990 Ft</span>
+            <p class="merch-product-desc"
+               data-hu="Pixel-art városképes Flanger Kids póló. 100% pamut, unisex fazon, oversized szabás."
+               data-en="Flanger Kids pixel-art cityscape tee. 100% cotton, unisex oversized fit.">
+              Pixel-art városképes Flanger Kids póló. 100% pamut, unisex fazon, oversized szabás.
+            </p>
+
+            <div class="color-picker">
+              <span class="color-picker-label" data-hu="SZÍN:" data-en="COLOR:">SZÍN:</span>
+              <div class="color-swatch active" style="background:#c8b99a;" title="Homokszín"
+                   onclick="selectPoloColor(this,'img/merch/polo_homokszin.jpg','Homokszín')"></div>
+              <div class="color-swatch" style="background:#1a6fbf;" title="Kék"
+                   onclick="selectPoloColor(this,'img/merch/polo_kek.jpg','Kék')"></div>
+              <div class="color-swatch" style="background:#d72b2b;" title="Piros"
+                   onclick="selectPoloColor(this,'img/merch/polo_piros.jpg','Piros')"></div>
+              <div class="color-swatch" style="background:#f0c12e;" title="Sárga"
+                   onclick="selectPoloColor(this,'img/merch/polo_sarga.jpg','Sárga')"></div>
+              <div class="color-swatch" style="background:#2faa52;" title="Zöld"
+                   onclick="selectPoloColor(this,'img/merch/polo_zold.jpg','Zöld')"></div>
+            </div>
+            <div id="polo-color-label" style="font-family:'VT323',monospace;font-size:20px;color:var(--purple);margin-bottom:10px;">Homokszín</div>
+
+            <p class="merch-product-note" data-hu="Méret: S / M / L / XL — Rendelés: DM-ben Instagram-on" data-en="Sizes: S / M / L / XL — Order via Instagram DM">
+              Méret: S / M / L / XL<br>
+              Rendelés: DM-ben Instagram-on
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VÁSZONTÁSKA -->
+      <div class="merch-product-section">
+        <div class="merch-layout">
+          <div>
+            <img id="tote-img" class="merch-img-display" src="img/merch/vaszontaska_bordo.jpg" alt="Flanger Kids vászontáska">
+          </div>
+          <div>
+            <div class="merch-product-title" data-hu="VÁSZONTÁSKA" data-en="TOTE BAG">VÁSZONTÁSKA</div>
+            <span class="merch-product-price">2 990 Ft</span>
+            <p class="merch-product-desc"
+               data-hu="Flanger Kids vászontáska, kézzel nyomott grafikával. Erős, mindennapos használatra. Három különböző minta közül választhatsz."
+               data-en="Flanger Kids canvas tote with hand-printed graphic. Sturdy for everyday use. Choose from three different designs.">
+              Flanger Kids vászontáska, kézzel nyomott grafikával. Erős, mindennapos használatra. Három különböző minta közül választhatsz.
+            </p>
+
+            <div class="color-picker" style="margin-bottom:14px;">
+              <span class="color-picker-label" data-hu="SZÍN:" data-en="COLOR:">SZÍN:</span>
+              <div class="color-swatch active" style="background:#7a1e2e;" title="Bordó"
+                   onclick="selectToteColor(this,'bordo','Bordó')"></div>
+              <div class="color-swatch" style="background:#1a1a1a;" title="Fekete"
+                   onclick="selectToteColor(this,'fekete','Fekete')"></div>
+              <div class="color-swatch" style="background:#3d4080;" title="Liláskék"
+                   onclick="selectToteColor(this,'lilaskek','Liláskék')"></div>
+              <div class="color-swatch" style="background:#1b3a6b;" title="Sötétkék"
+                   onclick="selectToteColor(this,'sotetkek','Sötétkék')"></div>
+              <div class="color-swatch" style="background:#2faa52;" title="Zöld"
+                   onclick="selectToteColor(this,'zold','Zöld')"></div>
+            </div>
+            <div id="tote-color-label" style="font-family:'VT323',monospace;font-size:20px;color:var(--purple);margin-bottom:14px;">Bordó</div>
+
+            <p class="merch-product-note" data-hu="Minta: A / B / C — Rendelés: DM-ben Instagram-on" data-en="Design: A / B / C — Order via Instagram DM">
+              Minta: A / B / C<br>
+              Rendelés: DM-ben Instagram-on
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOOD PHOTOS -->
+      <div class="mood-gallery">
+        <img src="img/merch/6.jpg" alt="Flanger Kids merch hangulat">
+        <img src="img/merch/9.jpg" alt="Flanger Kids merch hangulat">
+        <img src="img/merch/13.jpg" alt="Flanger Kids merch hangulat">
+      </div>
+
+      <div style="padding:20px 32px; background:var(--yellow); border-top:3px solid var(--black); text-align:center;">
+        <p style="font-family:'VT323',monospace; font-size:24px; color:var(--black); line-height:2;"
+           data-hu="RENDELÉSHEZ KERESS MEG MINKET INSTAGRAM DM-BEN VAGY <span style='color:var(--purple)'>KONCERTEKEN SZEMÉLYESEN!</span>"
+           data-en="TO ORDER, REACH OUT VIA INSTAGRAM DM OR <span style='color:var(--purple)'>FIND US AT A SHOW!</span>">
+          RENDELÉSHEZ KERESS MEG MINKET INSTAGRAM DM-BEN VAGY <span style="color:var(--purple)">KONCERTEKEN SZEMÉLYESEN!</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="page-wrap">
+    <div class="card">
+      <div class="section-header" style="background:var(--green);">
+        <div class="section-title" data-hu="KAPCSOLAT" data-en="CONTACT">KAPCSOLAT</div>
+        <div class="section-sub" data-hu="★ BOOKING ★" data-en="★ BOOKING ★">★ BOOKING & ELÉRHETŐSÉGEK ★</div>
+      </div>
+      <div class="contact-single">
+        <div class="contact-block-title" data-hu="📩 BOOKING & FELKÉRÉSEK" data-en="📩 BOOKING & ENQUIRIES">📩 BOOKING & FELKÉRÉSEK</div>
+        <div class="contact-row">
+          <span class="contact-label">E-mail</span>
+          <span class="contact-value"><a href="mailto:flangerkids@gmail.com">flangerkids@gmail.com</a></span>
+        </div>
+        <p class="contact-note"
+           data-hu="Koncertfelkérések, fesztiválbookingok és egyéb együttműködések esetén írj nekünk a fenti e-mail címre."
+           data-en="For show bookings, festival enquiries and other collaborations, drop us an email at the address above.">
+          Koncertfelkérések, fesztiválbookingok és egyéb együttműködések esetén írj nekünk a fenti e-mail címre.
+        </p>
+        <div class="contact-block-title" style="margin-top:8px;" data-hu="🔗 KÖZÖSSÉGI MÉDIA" data-en="🔗 SOCIAL MEDIA">🔗 KÖZÖSSÉGI MÉDIA</div>
+        <div class="socials">
+          <a class="social-btn ig" href="https://www.instagram.com/flangerkids/" target="_blank">Instagram</a>
+          <a class="social-btn fb" href="https://www.facebook.com/flangerkids" target="_blank">Facebook</a>
+          <a class="social-btn yt" href="https://www.youtube.com/@FlangerKids" target="_blank">YouTube</a>
+          <a class="social-btn sp" href="https://open.spotify.com/artist/0Z6OJHkHFz4JiwDHaCzhE9?si=kRQvp9-LS4GO8y44gCHjuw" target="_blank">Spotify</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /site-main -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><span style="color:var(--pink);">★</span> FLANGER KIDS <span style="color:var(--pink);">★</span></div>
+  <div class="footer-copy">© 2026 Flanger Kids · Budapest</div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // MERCH – polo color picker
+  var toteColor = 'bordo';
+  var totePattern = 'A';
+
+  window.selectPoloColor = function(el, imgSrc, label) {
+    document.querySelectorAll('.color-picker .color-swatch').forEach(function(s) {
+      if (s.closest('#polo-section') || s.parentElement.previousElementSibling === null) {
+        // handled below
+      }
+    });
+    // Only reset swatches in polo section
+    el.parentElement.querySelectorAll('.color-swatch').forEach(function(s){ s.classList.remove('active'); });
+    el.classList.add('active');
+    var img = document.getElementById('polo-img');
+    img.style.opacity = '0.4';
+    img.src = imgSrc;
+    img.onload = function(){ img.style.opacity = '1'; };
+    document.getElementById('polo-color-label').textContent = label;
+  };
+
+  window.selectToteColor = function(el, color, label) {
+    el.parentElement.querySelectorAll('.color-swatch').forEach(function(s){ s.classList.remove('active'); });
+    el.classList.add('active');
+    toteColor = color;
+    document.getElementById('tote-color-label').textContent = label;
+    updateToteImg();
+  };
+
+  window.selectTotePattern = function(el, pattern) {
+    el.parentElement.querySelectorAll('.pattern-btn').forEach(function(b){ b.classList.remove('active'); });
+    el.classList.add('active');
+    totePattern = pattern;
+    updateToteImg();
+  };
+
+  function updateToteImg() {
+    var imgEl = document.getElementById('tote-img');
+    var src = 'img/merch/vaszontaska_' + toteColor + '.jpg';
+    imgEl.style.opacity = '0.4';
+    imgEl.src = src;
+    imgEl.onload = function(){ imgEl.style.opacity = '1'; };
+  }
+
+  window.showSection = function(id) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.setLang = function(lang) {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    document.querySelectorAll('[data-hu]').forEach(el => {
+      const val = el.getAttribute('data-' + lang);
+      if (val !== null) el.innerHTML = val;
+    });
+  };
+</script>
+</body>
+</html>
