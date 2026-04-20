@@ -517,10 +517,12 @@
   footer {
     background: var(--purple);
     border-top: 4px solid var(--black);
-    padding: 26px 48px;
+    padding: 16px 32px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
   }
   .footer-logo { font-family: 'VT323', monospace; font-size: 28px; color: var(--yellow); }
   .footer-copy { font-family: 'VT323', monospace; font-size: 20px; color: rgba(255,255,255,0.5); text-align: right; line-height: 1.8; }
@@ -707,6 +709,15 @@
       </div>
     </div>
 
+    <!-- HERO FOTÓK -->
+    <div class="card" style="overflow:hidden;">
+      <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:0;">
+        <img src="img/hero1.jpg" alt="Flanger Kids" style="width:100%; height:340px; object-fit:cover; display:block; border-right:3px solid var(--black);">
+        <img src="img/hero2.jpg" alt="Flanger Kids" style="width:100%; height:340px; object-fit:cover; display:block; border-right:3px solid var(--black);">
+        <img src="img/hero3.jpg" alt="Flanger Kids" style="width:100%; height:340px; object-fit:cover; display:block;">
+      </div>
+    </div>
+
     <div class="card backpack-card">
       <div class="backpack-img-wrap">
         <img src="img/backpack.jpg" alt="Backpack Session">
@@ -714,8 +725,8 @@
       <div class="backpack-body">
         <div class="card-num">BCKPCK</div>
         <div class="card-label">🎒 BACKPACK SESSION 🎒</div>
-        <p data-hu="A Backpack Session a Flanger Kids legújabb live setje, ahol Fanny és Panka élőben remixelik már megjelent számaikat; a koncerteken megismert dalok így egy újragondolt, improvizatívabb formában szólalnak meg. A set elnevezése és kiinduló ötlete az volt, hogy legyen egy olyan duó felállásuk is, amihez két hátizsákban elférnek a szükséges cuccok."
-           data-en="Backpack Session is Flanger Kids' newest live set, where Fanny and Panka remix their already-released tracks in real time — familiar songs take on a reimagined, more improvisational shape. The name came from a simple idea: let's build a duo setup that fits into two backpacks.">
+        <p data-hu="A Backpack Session a Flanger Kids alternatív live setje, ahol Fanny és Panka élőben remixelik már megjelent számaikat; a koncerteken megismert dalok így egy újragondolt, improvizatívabb formában szólalnak meg. A set elnevezése és kiinduló ötlete az volt, hogy legyen egy olyan duó felállásuk is, amihez két hátizsákban elférnek a szükséges cuccok."
+           data-en="Backpack Session is Flanger Kids' alternative live set, where Fanny and Panka remix their released tracks in real time. Flanger Kids' familiar songs take on a reimagined, more improvisational shape. The name came from a simple idea: let's build a duo setup that fits into two backpacks.">
           A Backpack Session a Flanger Kids legújabb live setje, ahol Fanny és Panka élőben remixelik már megjelent számaikat; a koncerteken megismert dalok így egy újragondolt, improvizatívabb formában szólalnak meg. A set elnevezése és kiinduló ötlete az volt, hogy legyen egy olyan duó felállásuk is, amihez két hátizsákban elférnek a szükséges cuccok.
         </p>
       </div>
@@ -737,7 +748,7 @@
           <div class="concert-date">2026<br>ÁPR 23</div>
           <div class="concert-info">
             <h3>FLANGER KIDS, PAPERDEER LIVE ACT</h3>
-            <p>📍 Gólya, Budapest &nbsp;·&nbsp; Doors: 19:30 &nbsp;·&nbsp; 3500 Ft</p>
+            <p>📍 Gólya, Budapest &nbsp;·&nbsp; Doors: 19:00 &nbsp;·&nbsp; 3500 Ft</p>
           </div>
           <div class="concert-badge badge-soon"><a href="https://fb.me/e/4fCekiUHW" target="_blank" data-hu="ESEMÉNY" data-en="EVENT">ESEMÉNY</a></div>
         </div>
@@ -748,6 +759,30 @@
             <p>📍 Gébárti-tó, Zalaegerszeg &nbsp;·&nbsp; Start: 16:00</p>
           </div>
           <div class="concert-badge badge-free"><a href="https://www.tixa.hu/pankkutya-2026" target="_blank">TIXA</a></div>
+        </div>
+        <div class="concert-item">
+          <div class="concert-date">2026<br>JÚN 25</div>
+          <div class="concert-info">
+            <h3>FLANGER KIDS, TEMESI BLANKA @ Rakpart 62</h3>
+            <p>📍 Szeged</p>
+          </div>
+          <div class="concert-badge badge-soon">HAMAROSAN</div>
+        </div>
+        <div class="concert-item">
+          <div class="concert-date">2026<br>AUG 19</div>
+          <div class="concert-info">
+            <h3>FLANGER KIDS @ NOMÁD</h3>
+            <p>📍 Pápa</p>
+          </div>
+          <div class="concert-badge badge-soon"><a href="https://nomadgathering.com/jegyek/" target="_blank">JEGY</a></div>
+        </div>
+        <div class="concert-item">
+          <div class="concert-date">2026<br>SZEPT 29</div>
+          <div class="concert-info">
+            <h3>FLANGER KIDS @ KEREKDOMB FESZTIVÁL</h3>
+            <p>📍 Tállya</p>
+          </div>
+          <div class="concert-badge badge-free"><a href="https://www.facebook.com/events/946289507958318" target="_blank">FACEBOOK</a></div>
         </div>
       </div>
     </div>
@@ -767,11 +802,11 @@
       <div class="merch-product-section">
         <div class="merch-layout">
           <div>
-            <img id="polo-img" class="merch-img-display" src="img/merch/polo_homokszin.jpg" alt="Flanger Kids póló">
+            <img id="polo-img" class="merch-img-display" src="img/merch/polo_kek.jpg" alt="Flanger Kids póló">
           </div>
           <div>
             <div class="merch-product-title" data-hu="PÓLÓ" data-en="T-SHIRT">PÓLÓ</div>
-            <span class="merch-product-price">4 990 Ft</span>
+            <span class="merch-product-price">8 000 Ft</span>
             <p class="merch-product-desc"
                data-hu="Pixel-art városképes Flanger Kids póló. 100% pamut, unisex fazon, oversized szabás."
                data-en="Flanger Kids pixel-art cityscape tee. 100% cotton, unisex oversized fit.">
@@ -780,10 +815,10 @@
 
             <div class="color-picker">
               <span class="color-picker-label" data-hu="SZÍN:" data-en="COLOR:">SZÍN:</span>
-              <div class="color-swatch active" style="background:#c8b99a;" title="Homokszín"
-                   onclick="selectPoloColor(this,'img/merch/polo_homokszin.jpg','Homokszín')"></div>
-              <div class="color-swatch" style="background:#1a6fbf;" title="Kék"
+              <div class="color-swatch active" style="background:#1a6fbf;" title="Kék"
                    onclick="selectPoloColor(this,'img/merch/polo_kek.jpg','Kék')"></div>
+              <div class="color-swatch" style="background:#c8b99a;" title="Homokszín"
+                   onclick="selectPoloColor(this,'img/merch/polo_homokszin.jpg','Homokszín')"></div>
               <div class="color-swatch" style="background:#d72b2b;" title="Piros"
                    onclick="selectPoloColor(this,'img/merch/polo_piros.jpg','Piros')"></div>
               <div class="color-swatch" style="background:#f0c12e;" title="Sárga"
@@ -791,11 +826,11 @@
               <div class="color-swatch" style="background:#2faa52;" title="Zöld"
                    onclick="selectPoloColor(this,'img/merch/polo_zold.jpg','Zöld')"></div>
             </div>
-            <div id="polo-color-label" style="font-family:'VT323',monospace;font-size:20px;color:var(--purple);margin-bottom:10px;">Homokszín</div>
+            <div id="polo-color-label" style="font-family:'VT323',monospace;font-size:20px;color:var(--purple);margin-bottom:10px;">Kék</div>
 
-            <p class="merch-product-note" data-hu="Méret: S / M / L / XL — Rendelés: DM-ben Instagram-on" data-en="Sizes: S / M / L / XL — Order via Instagram DM">
+            <p class="merch-product-note" data-hu="Méret: S / M / L / XL — Rendelés: emailben" data-en="Sizes: S / M / L / XL — Order via email">
               Méret: S / M / L / XL<br>
-              Rendelés: DM-ben Instagram-on
+              Rendelés: emailben
             </p>
           </div>
         </div>
@@ -809,7 +844,7 @@
           </div>
           <div>
             <div class="merch-product-title" data-hu="VÁSZONTÁSKA" data-en="TOTE BAG">VÁSZONTÁSKA</div>
-            <span class="merch-product-price">2 990 Ft</span>
+            <span class="merch-product-price">5 000 Ft</span>
             <p class="merch-product-desc"
                data-hu="Flanger Kids vászontáska, kézzel nyomott grafikával. Erős, mindennapos használatra. Három különböző minta közül választhatsz."
                data-en="Flanger Kids canvas tote with hand-printed graphic. Sturdy for everyday use. Choose from three different designs.">
@@ -831,9 +866,9 @@
             </div>
             <div id="tote-color-label" style="font-family:'VT323',monospace;font-size:20px;color:var(--purple);margin-bottom:14px;">Bordó</div>
 
-            <p class="merch-product-note" data-hu="Minta: A / B / C — Rendelés: DM-ben Instagram-on" data-en="Design: A / B / C — Order via Instagram DM">
+            <p class="merch-product-note" data-hu="Minta: A / B / C — Rendelés: emailben" data-en="Design: A / B / C — Order via email">
               Minta: A / B / C<br>
-              Rendelés: DM-ben Instagram-on
+              Rendelés: emailben
             </p>
           </div>
         </div>
@@ -846,12 +881,21 @@
         <img src="img/merch/13.jpg" alt="Flanger Kids merch hangulat">
       </div>
 
-      <div style="padding:20px 32px; background:var(--yellow); border-top:3px solid var(--black); text-align:center;">
-        <p style="font-family:'VT323',monospace; font-size:24px; color:var(--black); line-height:2;"
-           data-hu="RENDELÉSHEZ KERESS MEG MINKET INSTAGRAM DM-BEN VAGY <span style='color:var(--purple)'>KONCERTEKEN SZEMÉLYESEN!</span>"
-           data-en="TO ORDER, REACH OUT VIA INSTAGRAM DM OR <span style='color:var(--purple)'>FIND US AT A SHOW!</span>">
-          RENDELÉSHEZ KERESS MEG MINKET INSTAGRAM DM-BEN VAGY <span style="color:var(--purple)">KONCERTEKEN SZEMÉLYESEN!</span>
+      <div style="padding:28px 32px; background:var(--yellow); border-top:3px solid var(--black); text-align:center;">
+        <p style="font-family:'VT323',monospace; font-size:26px; color:var(--black); line-height:1.8; margin-bottom:16px;"
+           data-hu="RENDELÉSHEZ ÍRJ EMAILT A <a href='mailto:flangerkids@gmail.com' style='color:var(--purple)'>FLANGERKIDS@GMAIL.COM</a> CÍMRE!"
+           data-en="TO ORDER, SEND AN EMAIL TO <a href='mailto:flangerkids@gmail.com' style='color:var(--purple)'>FLANGERKIDS@GMAIL.COM</a>!">
+          RENDELÉSHEZ ÍRJ EMAILT A <a href="mailto:flangerkids@gmail.com" style="color:var(--purple)">FLANGERKIDS@GMAIL.COM</a> CÍMRE!
         </p>
+        <div style="font-family:'VT323',monospace; font-size:20px; color:var(--black); background:var(--white); border:3px solid var(--black); display:inline-block; padding:16px 28px; text-align:left; line-height:2; box-shadow:5px 5px 0 var(--black);">
+          <div style="font-size:22px; color:var(--purple); margin-bottom:6px;" data-hu="📦 SZÜKSÉGES RENDELÉSI INFÓ:" data-en="📦 ORDER INFO REQUIRED:">📦 SZÜKSÉGES RENDELÉSI INFÓ:</div>
+          <div>· Név</div>
+          <div>· Cím</div>
+          <div>· Email</div>
+          <div>· Telefonszám</div>
+          <div>· Foxpost automata címe</div>
+          <div style="margin-top:10px; color:var(--purple);" data-hu="🚚 Foxposttal küldjük — szállítási díj: 1800 Ft" data-en="🚚 Shipped via Foxpost — delivery fee: 1800 HUF">🚚 Foxposttal küldjük — szállítási díj: 1800 Ft</div>
+        </div>
       </div>
     </div>
   </div>
@@ -892,8 +936,16 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo"><span style="color:var(--pink);">★</span> FLANGER KIDS <span style="color:var(--pink);">★</span></div>
-  <div class="footer-copy">© 2026 Flanger Kids · Budapest</div>
+  <div class="tenor-gif-embed" data-postid="5191192546579150246" data-share-method="host" data-aspect-ratio="1" data-width="60px"><a href="https://tenor.com/view/nyan-cat-gif-5191192546579150246">Nyan Cat GIF</a></div>
+  <div class="tenor-gif-embed" data-postid="5191192546579150246" data-share-method="host" data-aspect-ratio="1" data-width="60px"><a href="https://tenor.com/view/nyan-cat-gif-5191192546579150246">Nyan Cat GIF</a></div>
+  <div class="tenor-gif-embed" data-postid="5191192546579150246" data-share-method="host" data-aspect-ratio="1" data-width="60px"><a href="https://tenor.com/view/nyan-cat-gif-5191192546579150246">Nyan Cat GIF</a></div>
+  <div style="text-align:center; flex: 1;">
+    <a href="mailto:flangerkids@gmail.com" style="font-family:'VT323',monospace; font-size:26px; color:var(--yellow); text-decoration:none; border-bottom: 2px solid var(--pink);">flangerkids@gmail.com</a>
+  </div>
+  <div class="tenor-gif-embed" data-postid="5191192546579150246" data-share-method="host" data-aspect-ratio="1" data-width="60px"><a href="https://tenor.com/view/nyan-cat-gif-5191192546579150246">Nyan Cat GIF</a></div>
+  <div class="tenor-gif-embed" data-postid="5191192546579150246" data-share-method="host" data-aspect-ratio="1" data-width="60px"><a href="https://tenor.com/view/nyan-cat-gif-5191192546579150246">Nyan Cat GIF</a></div>
+  <div class="tenor-gif-embed" data-postid="5191192546579150246" data-share-method="host" data-aspect-ratio="1" data-width="60px"><a href="https://tenor.com/view/nyan-cat-gif-5191192546579150246">Nyan Cat GIF</a></div>
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
