@@ -532,6 +532,126 @@
   ::-webkit-scrollbar-track { background: var(--yellow); }
   ::-webkit-scrollbar-thumb { background: var(--purple); border: 2px solid var(--black); }
   ::-webkit-scrollbar-thumb:hover { background: var(--pink); }
+
+  /* HAMBURGER */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    background: var(--purple);
+    border: 3px solid var(--black);
+    cursor: pointer;
+    padding: 7px;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: var(--white);
+    border-radius: 0;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  .lang-switcher-mobile { display: none; }
+
+  /* MOBILE BREAKPOINT */
+  @media (max-width: 768px) {
+    /* Nav */
+    nav { padding: 0 16px; }
+    .hamburger { display: flex; }
+    .lang-switcher-desktop { display: none; }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0; right: 0;
+      background: var(--pink);
+      border-bottom: 4px solid var(--black);
+      z-index: 998;
+    }
+    .nav-links.open { display: flex; }
+    .nav-links a {
+      border-left: none;
+      border-bottom: 2px solid rgba(0,0,0,0.12);
+      padding: 16px 20px;
+      font-size: 26px;
+    }
+    .lang-switcher-mobile {
+      display: flex;
+      margin: 12px 20px 16px;
+      align-self: flex-start;
+    }
+
+    /* Page wrap */
+    .page-wrap { padding: 0 12px 48px; margin: 24px auto; gap: 20px; }
+
+    /* Hero */
+    .hero { grid-template-columns: 1fr; min-height: unset; }
+    .hero-left { padding: 32px 20px; border-right: none; border-bottom: 3px solid var(--black); }
+    .hero-title { font-size: 56px; }
+    .hero-right { padding: 28px 20px; }
+    .hero-photo { width: 200px; height: 200px; }
+
+    /* Backpack card */
+    .backpack-card { grid-template-columns: 1fr; }
+    .backpack-img-wrap { border-right: none; border-bottom: 3px solid var(--black); min-height: 200px; max-height: 260px; }
+    .backpack-body { padding: 24px 20px; }
+    .card-num { font-size: 38px; }
+
+    /* Section header */
+    .section-header { padding: 18px 20px; }
+    .section-title { font-size: 36px; }
+    .section-sub { font-size: 18px; }
+
+    /* Concerts */
+    .concert-item {
+      grid-template-columns: 80px 1fr;
+      padding: 18px 16px 18px 22px;
+      gap: 14px;
+    }
+    .concert-badge {
+      grid-column: 2;
+      align-self: start;
+      font-size: 18px;
+    }
+    .concert-date { font-size: 20px; }
+    .concert-info h3 { font-size: 19px; }
+    .concert-info p { font-size: 12px; }
+
+    /* Merch */
+    .merch-product-section { padding: 24px 16px; }
+    .merch-layout { grid-template-columns: 1fr; gap: 20px; }
+    .merch-img-display { max-width: 100%; }
+    .merch-product-title { font-size: 30px; }
+    .mood-gallery { grid-template-columns: 1fr; }
+    .mood-gallery img { border-right: none; border-bottom: 3px solid var(--black); }
+    .mood-gallery img:last-child { border-bottom: none; }
+
+    /* Contact */
+    .contact-single { padding: 28px 20px; }
+
+    /* Footer */
+    footer { flex-direction: column; gap: 8px; padding: 20px 16px; text-align: center; }
+    .footer-copy { text-align: center; }
+
+    /* Merch order note */
+    div[style*="padding:20px 32px"] { padding: 16px !important; }
+  }
+
+  @media (max-width: 420px) {
+    .hero-title { font-size: 44px; }
+    .hero-eyebrow { font-size: 17px; }
+    .social-btn { font-size: 18px; padding: 5px 10px; }
+  }
 </style>
 </head>
 <body>
@@ -540,16 +660,23 @@
 <nav>
   <a class="nav-logo" href="#" onclick="showSection('home')">FLANGER <span>KIDS</span></a>
   <div class="nav-right">
-    <div class="nav-links">
-      <a href="#" onclick="showSection('home')"     data-hu="Főoldal"   data-en="Home">Főoldal</a>
-      <a href="#" onclick="showSection('concerts')" data-hu="Koncertek" data-en="Shows">Koncertek</a>
-      <a href="#" onclick="showSection('merch')"    data-hu="Merch"     data-en="Merch">Merch</a>
-      <a href="#" onclick="showSection('contact')"  data-hu="Kapcsolat" data-en="Contact">Kapcsolat</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#" onclick="showSection('home');closeMobileMenu()"     data-hu="Főoldal"   data-en="Home">Főoldal</a>
+      <a href="#" onclick="showSection('concerts');closeMobileMenu()" data-hu="Koncertek" data-en="Shows">Koncertek</a>
+      <a href="#" onclick="showSection('merch');closeMobileMenu()"    data-hu="Merch"     data-en="Merch">Merch</a>
+      <a href="#" onclick="showSection('contact');closeMobileMenu()"  data-hu="Kapcsolat" data-en="Contact">Kapcsolat</a>
+      <div class="lang-switcher lang-switcher-mobile">
+        <button class="lang-btn active" data-lang="hu" onclick="setLang('hu')">HUN</button>
+        <button class="lang-btn"        data-lang="en" onclick="setLang('en')">ENG</button>
+      </div>
     </div>
-    <div class="lang-switcher">
+    <div class="lang-switcher lang-switcher-desktop">
       <button class="lang-btn active" data-lang="hu" onclick="setLang('hu')">HUN</button>
       <button class="lang-btn"        data-lang="en" onclick="setLang('en')">ENG</button>
     </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -817,6 +944,18 @@
     document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.toggleMobileMenu = function() {
+    const links = document.getElementById('nav-links');
+    const btn = document.getElementById('hamburger');
+    links.classList.toggle('open');
+    btn.classList.toggle('open');
+  };
+
+  window.closeMobileMenu = function() {
+    document.getElementById('nav-links').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
   };
 
   window.setLang = function(lang) {
